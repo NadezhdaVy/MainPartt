@@ -1,0 +1,95 @@
+.aside-wrapper{
+	
+	
+	width: 320px;
+	margin-right: auto;
+	position: relative;
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+
+
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+.btn{
+	border: none;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	background-size: cover;
+
+}
+
+.btn-search{
+	background: url(../img/search.svg);
+}
+
+.btn-burger-close{
+background-image: url(../img/burger-cl.svg);
+}
+
+.container{
+	padding: 1.5em;
+	display: flex;
+padding-bottom: 0;
+	align-items: center;
+}
+
+.aside__btn-search{
+	margin-left: auto;
+}
+
+
+.logo{
+	margin-left: 1.3em;
+}
+
+.services__item{
+	margin-bottom: 2.5em;
+	transition: all 400ms ease;
+}
+.services__item:hover{
+	
+	filter:opacity(.5);
+}
+
+.aside-footer__container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+.icon, .switch-lang__btn{
+	transition: all 400ms linear;
+}
+
+.icon:hover,.switch-lang__btn:hover{
+	filter:hue-rotate(10deg) drop-shadow(5px -2px 10px  rgb(255, 188, 216));;
+}
+
+
+
+.aside-footer__item{
+	margin-bottom: 1.5em;
+}
+.userbar-items__icon{
+	margin-right: 10px;
+}
+.switch-lang__btn{
+	margin-top: 1em;
+	margin-right: 10px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+}
+
