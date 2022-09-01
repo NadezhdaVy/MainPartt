@@ -163,10 +163,10 @@ color: #7E7E82;
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	/* border: 1px solid black; */
+	
 	background-image: url(../img/icon.svg);
 	background-repeat: no-repeat;
-	/* background-size:50%; */
+	
 	background-position: 50% 50%;
 }
 .about__col-bg{
