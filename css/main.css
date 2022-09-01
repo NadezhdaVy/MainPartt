@@ -28,7 +28,7 @@ body{
 	font-family: 'TT Lakes';
 	background-color: #F8F8F8;
 }
-.wrapper{
+.main-wrapper{
 	
 	position: relative;
 	height: 100vh;
@@ -324,7 +324,7 @@ color: #7E7E82;
 }
 
 @media screen and (min-width: 1440px){
-	.wrapper{
+	.main-wrapper{
 		max-width: 1440px;
 		margin: 0 auto;
 	}
