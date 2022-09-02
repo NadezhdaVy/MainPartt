@@ -57,6 +57,7 @@ a{
 	height: 40px;
 	background-color: transparent;
 	background-size: cover;
+	cursor: pointer;
 
 }
 
@@ -120,7 +121,7 @@ display: block;
 }
 
 .icon:hover{
-	filter:hue-rotate(10deg) drop-shadow(5px -2px 10px  rgb(255, 188, 216));;
+	filter:hue-rotate(15deg);
 }
 .switch-lang__btn:hover{
 	filter: opacity(.5);
