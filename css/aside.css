@@ -120,14 +120,14 @@ display: block;
 }
 
 .icon, .switch-lang__btn{
-	transition: all 400ms linear;
+	transition: all 500ms linear;
 }
 
 .icon:hover{
-	filter:hue-rotate(15deg);
+	filter:opacity(.6)
 }
 .switch-lang__btn:hover{
-	filter: opacity(.5);
+	filter:opacity(.5);
 }
 
  .aside-footer__userbar-items{
