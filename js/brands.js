@@ -1,4 +1,4 @@
-var init = false;
+let init = false;
 
 function swiperCard() {
   if (window.innerWidth < 768) {
@@ -56,26 +56,31 @@ swiperCard();
 window.addEventListener("resize", swiperCard);
 
 
-var infoButton = document.querySelector(".more-info");
-var iconButton = infoButton.querySelector(".more-info__icon");
+let infoButton = document.querySelector(".more-info");
+infoButton.insertAdjacentHTML("afterbegin",`<span class='more-info__text more-info__text--open'>Читать далее</span>` )
+infoButtonTxt = infoButton.querySelector("span");
+let brandsSwiper = document.querySelector(".brands-swiper");
 
 
-
-
-
-infoButton.addEventListener("click",function(){
-	
-if(infoButton.querySelector(".more-info__text--closed").hidden === false){
-	infoButton.querySelector(".more-info__text--closed").hidden = true;
-	infoButton.querySelector(".more-info__text--opened").hidden = false;
-	iconButton.style.transform = "rotate(180deg)";
-	document.querySelector(".brands-swiper").style.cssText = "height : 100%; overflow : visible";
+function showMore (){
+infoButton.classList.toggle("more-info--clicked");
+if(infoButton.classList.contains("more-info--clicked")){
+	infoButtonTxt.classList.toggle("more-info__text--open");
+   infoButtonTxt.classList.toggle("more-info__text--hide");
+	infoButtonTxt.textContent = "Скрыть";
+	brandsSwiper.style.cssText = "height : 100%; overflow : visible";
 }else{
-	infoButton.querySelector(".more-info__text--closed").hidden = false;
-	infoButton.querySelector(".more-info__text--opened").hidden = true;
-	iconButton.style.transform = "rotate(360deg)";
-	document.querySelector(".brands-swiper").style.cssText = "height : 200px; overflow : hidden";
+	infoButtonTxt.textContent = "Читать далее";
+	brandsSwiper.style.cssText = "height : 200px; overflow : hidden";
+}
+return infoButton;
 }
 
+infoButton.addEventListener("click", showMore)
 
-})
+
+
+
+
+
+

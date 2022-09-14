@@ -43,10 +43,11 @@ padding: 1em;
 .brands-header__title{
 margin: 0;
 font-weight: normal;
-font-size: 1.5rem;
+font-size: 1rem;
 line-height: 1.5rem;
 color: rgba(126, 126, 130, 1);
 letter-spacing: -0.2px;
+text-transform: uppercase;
 }
 .brands-swiper{
 	width: 100%;
@@ -97,48 +98,48 @@ align-items: center;
 }
 
 .brands-swiper__item:nth-child(1) .brands-swiper__logo{
-	background-image: url("../img/Bitmap.png");
+	background-image: url("../img/lenovo.png");
 }
 .brands-swiper__item:nth-child(2) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-2.png");
+	background-image: url("../img/samsung.png");
 	
 }
 .brands-swiper__item:nth-child(3) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-3.png");
+	background-image: url("../img/apple.png");
 	background-size: 35%;
 	
 }
 .brands-swiper__item:nth-child(4) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-4.png");
+	background-image: url("../img/vSonic.png");
 }
 .brands-swiper__item:nth-child(5) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-5.png");
+	background-image: url("../img/bosh.png");
 	
 }
 .brands-swiper__item:nth-child(6) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-6.png");
+	background-image: url("../img/hp.png");
 	background-size: 40%;
 	
 }
 .brands-swiper__item:nth-child(7) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-7.png");
+	background-image: url("../img/acer.png");
 }
 .brands-swiper__item:nth-child(8) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-8.png");
+	background-image: url("../img/sony.png");
 	
 }
 .brands-swiper__item:nth-child(9) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-2.png");
+	background-image: url("../img/samsung.png");
 	
 }
 
 .brands-swiper__item:nth-child(10) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-4.png");
+	background-image: url("../img/vSonic.png");
 	
 }
 
 .brands-swiper__item:nth-child(11) .brands-swiper__logo{
-	background-image: url("../img/Bitmap-6.png");
+	background-image: url("../img/hp.png");
 	background-size: 40%;
 }
 
@@ -199,15 +200,32 @@ background-size: cover;
 	/* margin-left: 10px; */
 	
 	}
+	
+	.more-info::before{
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		background-image: url("../img/icon.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		top:0;
+		left: 2px;
+		}
 
+	.more-info--clicked::before{
+		transform: rotate(180deg);
+	
+	}
 
 
 	.more-info__text{
-		margin-left: 10px;
+		margin-left: 20px;
 		font-family: 'TT Lakes';
 	}
 
-	.more-info__icon{
+	/* .more-info__icon{
 		display: inline-block;
 		width: 24px;
 		height: 24px;
@@ -216,8 +234,8 @@ background-size: cover;
 		background-repeat: no-repeat;
 		
 		background-position: 50% 50%;
-		/* transform: rotate(180deg); */
-	}
+	
+} */
 
 
 	.btn{
