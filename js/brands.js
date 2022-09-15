@@ -57,20 +57,16 @@ window.addEventListener("resize", swiperCard);
 
 
 let infoButton = document.querySelector(".more-info");
-infoButton.insertAdjacentHTML("afterbegin",`<span class='more-info__text more-info__text--open'>Читать далее</span>` )
-infoButtonTxt = infoButton.querySelector("span");
 let brandsSwiper = document.querySelector(".brands-swiper");
 
 
 function showMore (){
 infoButton.classList.toggle("more-info--clicked");
 if(infoButton.classList.contains("more-info--clicked")){
-	infoButtonTxt.classList.toggle("more-info__text--open");
-   infoButtonTxt.classList.toggle("more-info__text--hide");
-	infoButtonTxt.textContent = "Скрыть";
+	infoButton.textContent = "Скрыть";
 	brandsSwiper.style.cssText = "height : 100%; overflow : visible";
 }else{
-	infoButtonTxt.textContent = "Читать далее";
+	infoButton.textContent = "Читать далее";
 	brandsSwiper.style.cssText = "height : 200px; overflow : hidden";
 }
 return infoButton;

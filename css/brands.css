@@ -186,8 +186,7 @@ background-size: cover;
 	.brands .brands-swiper{
 		height: 200px;
 		overflow: hidden;
-		/* height: 100%;
-		overflow: visible; */
+		
 	}
 
 	.brands__more-info{
@@ -197,8 +196,8 @@ background-size: cover;
 	display: flex;
 	align-items: center;
 	position: relative;
-	/* margin-left: 10px; */
-	
+	left: 1em;
+	font-family: 'TT Lakes';
 	}
 	
 	.more-info::before{
@@ -210,34 +209,15 @@ background-size: cover;
 		background-image: url("../img/icon.svg");
 		background-repeat: no-repeat;
 		background-position: center;
-		top:0;
-		left: 2px;
+		top:-1.5px;
+		left: -20px;
 		}
 
 	.more-info--clicked::before{
 		transform: rotate(180deg);
 	
 	}
-
-
-	.more-info__text{
-		margin-left: 20px;
-		font-family: 'TT Lakes';
-	}
-
-	/* .more-info__icon{
-		display: inline-block;
-		width: 24px;
-		height: 24px;
-		
-		background-image: url(../img/icon.svg);
-		background-repeat: no-repeat;
-		
-		background-position: 50% 50%;
 	
-} */
-
-
 	.btn{
 		border: none; 
 		background-color: transparent;
