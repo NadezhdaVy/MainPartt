@@ -1,0 +1,50 @@
+.btn{
+	border: none; 
+	background-color: transparent;
+	cursor: pointer;
+	font-family: 'TT Lakes';
+}
+
+.more-info {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-top: 1.5em;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: 1em;
+	font-family: 'TT Lakes';
+}
+
+.more-info::before{
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	background-image: url('../img/icon.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	top:-1.5px;
+	left: -20px;
+	}
+
+.more-info--clicked::before{
+	transform: rotate(180deg);
+
+}
+
+.about__more-info {
+	display: flex;
+}
+
+
+.service-list__more-info{
+	display:none;
+
+	@media screen and (min-width:768px){
+		display: flex;
+		}
+}
+	
+	

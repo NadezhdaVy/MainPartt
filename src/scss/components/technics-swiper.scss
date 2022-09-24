@@ -1,0 +1,38 @@
+
+
+.technics-swiper {
+	height: 215px;
+
+	@media screen and (min-width:768px){
+		height:180px;
+	}
+
+	&__item{
+		height: 160px;
+	}
+
+	&__icon{
+		position: absolute;
+		right: 1em;
+		bottom:1em;
+	
+}
+
+&__inner-card{
+	border-radius: 6px;
+}
+}
+
+.technics-swiper-wrapper {
+
+	@media screen and (min-width:768px){
+		grid-template-columns: repeat(3,1fr);
+		gap: 1.5em;
+	}
+
+	@media screen and (min-width:1120px){
+		grid-template-columns: repeat(4,1fr);
+	}
+
+}
+

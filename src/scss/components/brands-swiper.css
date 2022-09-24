@@ -1,0 +1,75 @@
+.brands-swiper {
+  width: 100%;
+  height: 125px;
+}
+@media screen and (min-width: 768px) {
+  .brands-swiper {
+    height: 200px;
+    overflow: hidden;
+  }
+}
+.brands-swiper__item:nth-child(1) .brands-swiper__logo {
+  background-image: url("../../img/lenovo.png");
+}
+.brands-swiper__item:nth-child(2) .brands-swiper__logo {
+  background-image: url("../../img/samsung.png");
+}
+.brands-swiper__item:nth-child(3) .brands-swiper__logo {
+  background-image: url("../../img/apple.png");
+  background-size: 35%;
+}
+.brands-swiper__item:nth-child(4) .brands-swiper__logo {
+  background-image: url("../../img/vSonic.png");
+}
+.brands-swiper__item:nth-child(5) .brands-swiper__logo {
+  background-image: url("../../img/bosh.png");
+}
+.brands-swiper__item:nth-child(6) .brands-swiper__logo {
+  background-image: url("../../img/hp.png");
+  background-size: 40%;
+}
+.brands-swiper__item:nth-child(7) .brands-swiper__logo {
+  background-image: url("../../img/acer.png");
+}
+.brands-swiper__item:nth-child(8) .brands-swiper__logo {
+  background-image: url("../../img/sony.png");
+}
+.brands-swiper__item:nth-child(9) .brands-swiper__logo {
+  background-image: url("../../img/samsung.png");
+}
+.brands-swiper__item:nth-child(10) .brands-swiper__logo {
+  background-image: url("../../img/vSonic.png");
+}
+.brands-swiper__item:nth-child(11) .brands-swiper__logo {
+  background-image: url("../../img/hp.png");
+  background-size: 40%;
+}
+.brands-swiper__item {
+  height: 72px;
+}
+.brands-swiper__inner-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brands-swiper__logo {
+  width: 138px;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-right: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .brands-swiper-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .brands-swiper-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=brands-swiper.css.map */

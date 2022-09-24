@@ -1,0 +1,202 @@
+
+
+
+.prices-swiper {
+	height: 270px;
+
+	@media screen and (min-width:768px){
+		  height: 100%;
+		  overflow: visible;
+		  border-radius: 6px;
+		}
+
+	&__item:first-child{
+		display: none;
+
+		@media screen and (min-width:768px){
+			background-color: #F8F8F8;
+	      display: block;
+		 }
+	}
+	&__item:last-child{
+		.prices-swiper__inner-card::after{
+
+			@media screen and (min-width:768px){
+				display: none;
+			 }
+		}
+	}
+
+	&__item {
+		height: 200px;
+
+		@media screen and (min-width:768px){
+			width: 100% !important;
+			height: 54px;
+			
+		 }
+	}
+
+	&__inner-card {
+		padding: 1.25em 1em;
+	   font-size: 14px;
+	   height: 200px;
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: space-between;
+	   width: 100%;
+		border-radius: 6px;
+		
+
+		@media screen and (min-width:768px){
+			display: grid;
+			grid-template-columns: 50% 11% 12% 17%;
+			justify-content: space-between;
+			align-items:center;
+			border-radius: none;
+			gap: 1em;
+			height: 54px;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: none !important;
+		 }
+
+		 @media screen and (min-width:1120px){
+			grid-template-columns: 45%  15% 15% 15%;
+		}
+
+		.inner-text:nth-child(3) > .inner-text__description{
+			margin-bottom: 0;
+			}
+
+
+	}
+
+	&__inner-card::after{
+		@media screen and (min-width:768px){
+			content: "";
+			display: block;
+			width: 97%;
+			top: 55px;
+			left: 12px;
+			position: absolute;
+			height: 1px;
+			background-color: rgba(234, 234, 234, 1);
+			z-index: 999;
+		 }
+ 
+
+	}
+
+	&__inner-text {
+		@media screen and (min-width:768px){
+			span.prices-swiper__service-title{
+				display: none;
+			}
+		 }
+		
+	}
+
+	&__service-title {
+		display: block;
+		margin-bottom: 3px;
+		color: #7E7E82;
+	}
+
+	&__service-description {
+		display: block;
+	}
+
+	&__btn {
+		position: absolute;
+	   right: 1.2em;
+	   bottom: 1.2em;
+	   border-radius: 50px;
+	   border: none;
+	   padding: 7px 30px 7px 10px;
+	   color: white;
+	   background-color: #FF3E79;
+	   text-transform: uppercase;
+	   font-size: 12px;
+	   font-family: 'TT Lakes';
+	   font-weight: 700;
+
+		@media screen and (min-width:768px){
+			position: relative;
+			top: 0;
+			right: 0;
+		 }
+	}
+
+	&__btn::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		right: 7px;
+		top: 2px;
+		background-image: url(../img/dropdown.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.prices-swiper-header {
+	@media screen and (min-width:768px){
+		background-color: #F8F8F8;
+		border: none;
+	 }
+
+}
+
+
+.commercial-order {
+	padding-right: 2em;
+
+	&__text {
+		font-size: 14px;
+		margin-top: 0;
+		line-height: 20px;
+
+		@media screen and (min-width:768px){
+			margin-top: 1em;
+		 }
+	}
+
+	&__btn {
+		font-weight: 500;
+		font-size: 1rem;
+		width: 215px;
+		text-align: left;
+		line-height: 1.5rem;
+		position: relative;
+		padding: 0;
+
+		@media screen and (min-width:768px){
+			width: 320px;
+		 }
+	}
+
+	&__btn::after{
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		right: 85px;
+		bottom: -1px;
+		background-image: url(../img/commercialBtn.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@media screen and (min-width:768px){
+			right: 0px;
+		 }
+	}
+}
+
+
+
+

@@ -1,0 +1,165 @@
+
+
+
+$button-color: #FF3E79;
+$decor-color: rgba(65, 246, 215, 1);
+$decor-link-color: #B8FFEC;
+$decor-color-light:#D9FFF5;
+$link-color: rgba(126, 126, 130, 1);
+$body-color: rgba(248, 248, 248, 1);
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'TT Lakes';
+	background-color: $body-color;
+
+}
+
+.main-page {
+
+
+	@media screen and (min-width:1120px){
+		margin-left: 320px;
+	}
+	
+}
+
+
+
+button:focus{
+	outline: none;
+}
+
+.main-wrapper {
+	position: relative;
+
+	@media screen and (min-width: 1440px){
+		
+			max-width: 1720px;
+			margin: 0 auto;
+	}
+	}
+
+.container{
+	padding: 1em;
+
+	@media screen and (min-width:768px){
+		padding: 1em 1.5em;
+	}
+
+}
+
+
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+span{
+	display: inline-block;
+}
+
+
+
+.logo{
+	flex-grow: 1;
+	margin-left: 1em;
+	z-index: 99999999;
+
+	@media screen and (min-width:1120px){
+		visibility: visible;
+		position: absolute;
+		left: 1em;
+		top:1.5em;
+		z-index: 9999999;
+	}
+}
+
+.userbar-items{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: flex-end;
+
+	@media screen and (min-width:1120px){
+		width: fit-content;
+	}
+	
+	&__btn{
+		margin-left: 1em;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@media screen and (min-width:1120px){
+			margin-left: 0;
+		}
+	}
+	
+	
+
+&__contacts {
+	display: none;
+	position: absolute;
+	left: .5em;
+	top: 34em;
+	z-index: 999999;
+
+	@media screen and (min-width:768px){
+		display: flex;
+		margin-right: 1em;
+		position: static;
+	}
+
+	@media screen and (min-width:1120px){
+		visibility: visible;
+		position: absolute;
+		top: 44em;
+		left: 1.5em;
+	}
+
+	.icon {
+		@media screen and (min-width:768px){
+			margin-right: 10px;
+		}
+	}
+}
+
+&__contacts--left {
+	position: absolute;
+	top: 34em;
+	left: 0.5em;
+	display: flex;
+
+	@media screen and (min-width:768px){
+		position: absolute;
+		top: 34em;
+		left: 0.5em;
+	}
+}
+}
+
+.icon{
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+
+
+.burger-menu{
+	background-image: url(../img/burger.svg);
+	}
+	
+	.burger-menu--clicked{
+		background-image: url(../img/close.svg);
+		z-index: 9999999;
+	}
+
