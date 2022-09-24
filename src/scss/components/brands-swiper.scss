@@ -1,0 +1,118 @@
+
+
+
+.brands-swiper {
+	width: 100%;
+	height: 125px;
+
+	@media screen and (min-width:768px){
+		height: 200px;
+		overflow: hidden;
+	}
+
+	&__item:nth-child(1){
+
+		.brands-swiper__logo{
+			background-image: url("../img/lenovo.png");
+		}
+	}
+	&__item:nth-child(2){
+
+		.brands-swiper__logo{
+			background-image: url("../img/samsung.png");
+		}
+	}
+	&__item:nth-child(3){
+
+		.brands-swiper__logo{
+			background-image: url("../img/apple.png");
+	      background-size: 35%;
+		}
+	}
+	&__item:nth-child(4){
+
+		.brands-swiper__logo{
+			background-image: url("../img/vSonic.png");
+		}
+	}
+	&__item:nth-child(5){
+
+		.brands-swiper__logo{
+			background-image: url("../img/bosh.png");
+		}
+	}
+	&__item:nth-child(6){
+
+		.brands-swiper__logo{
+			background-image: url("../img/hp.png");
+	      background-size: 40%;
+		}
+	}
+
+	&__item:nth-child(7){
+
+		.brands-swiper__logo{
+			background-image: url("../img/acer.png");
+		}
+	}
+	&__item:nth-child(8){
+
+		.brands-swiper__logo{
+			background-image: url("../img/sony.png");
+		}
+	}
+	&__item:nth-child(9){
+
+		.brands-swiper__logo{
+			background-image: url("../img/samsung.png");
+		}
+	}
+	&__item:nth-child(10){
+
+		.brands-swiper__logo{
+			background-image: url("../img/vSonic.png");
+		}
+	}
+	&__item:nth-child(11){
+
+		.brands-swiper__logo{
+			background-image: url("../img/hp.png");
+	      background-size: 40%;
+		}
+	}
+
+		&__item {
+			height: 72px;
+		}
+
+		&__inner-card {
+			display: flex;
+	      justify-content: space-between;
+	      align-items: center;
+			border-radius: 6px;
+		}
+
+		&__logo {
+			width: 138px;
+	      height: 100%;
+	      background-size: 100%;
+	      background-repeat: no-repeat;
+	      background-position: left center;
+	      margin-right: 1em;
+		}
+
+	
+}
+
+
+.brands-swiper-wrapper {
+	@media screen and (min-width:768px){
+		grid-template-columns: repeat(3,1fr);
+		gap: 1.5em;
+		margin-top: 1em;
+	}
+	@media screen and (min-width:1440px){
+		grid-template-columns: repeat(4,1fr);
+	}
+}
+

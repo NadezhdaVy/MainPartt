@@ -1,0 +1,84 @@
+// @import 'general';
+
+.service-list {
+
+		
+
+		.container{
+			padding: 1em;
+
+			@media screen and (min-width:768px){
+				padding: 1em 1.5em;
+			}
+			@media screen and (min-width:1440px){
+				padding: 1em 2em;
+				max-width: 1440px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		
+}
+
+.service-list-header {
+	background-image: linear-gradient(45deg,rgba(248, 248, 248, 1),rgba(255, 255, 255, 1));
+	border-top: 2px solid $decor-color-light;
+}
+
+.service-list-title{
+	margin: 0;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: $link-color;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	}
+
+
+.service-list-swiper {
+&__inner-card {
+			width: 98%;
+	      height: 100%;
+	      // border-radius: 6px;
+	      align-self: center;
+	      background-color:white;
+	      box-shadow: 0 0 0 1px rgba(234, 234, 234, 1);
+	      padding: .7em 1em;
+	      box-sizing: border-box;
+		}
+
+		&__icon {
+			width: 40px;
+         height: 40px;
+         background-image: url("../img/go.svg");
+         background-size: cover;
+		}
+}
+
+.service-list-swiper-wrapper {
+	padding: .5em .1em;
+
+	@media screen and (min-width:768px){
+		display: grid;
+	}
+}
+
+.swiper-pagination {
+
+	@media screen and (min-width:768px){
+		display: none;
+	}
+	.swiper-pagination-bullet{
+		width: 12px;
+		height: 12px;
+		background-color: rgba(221, 221, 221, 1);
+	}
+	.swiper-pagination-bullet-active{
+		background-color: rgba(181, 182, 188, 1);
+	}
+}
+
+
+

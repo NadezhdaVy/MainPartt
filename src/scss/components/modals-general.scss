@@ -1,0 +1,139 @@
+
+
+.call-modal,.feedback-modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .9);
+	top: 0;
+	z-index: 999999999;
+	backdrop-filter: blur(4px);
+	opacity: 0;
+	visibility: hidden;
+
+
+		.modal__body {
+			min-height: 100%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+		}
+}
+
+.call-modal--active,.feedback-modal--active{
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal-content {
+	background-color: white;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+	box-sizing: border-box;
+	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+	-2px 0 4px 0 rgba(69, 79, 126, 0.02);
+
+
+	@media screen and (min-width:768px) {
+		width: 440px;
+	}
+}
+
+.close {
+
+	@media screen and (min-width:768px) {
+		position: absolute;
+		left: -4em;
+		top: 3em;
+	}
+}
+.close-btn {
+	background-image: url(../img/close.svg);
+	z-index: 99999;
+}
+
+.modal-title {
+	font-size: 1.5rem;
+
+	&::before{
+		content: "";
+		display: block;
+		width: 4px;
+		height: 40px;
+		background-color: $decor-color;
+		position: absolute;
+		left: 0;
+		border-bottom-right-radius: 6px;
+		border-top-right-radius: 6px;
+	}
+}
+.modal-form {
+
+		&__input {
+			width: 100%;
+			padding: 1em;
+			box-sizing: border-box;
+			font-weight: 500;
+			border-radius: 8px;
+			border: 1px solid #EAEAEA;
+			font-size: 1rem;
+			margin-bottom: 1em;
+			height: 48px;
+		}
+
+
+		&__confident {
+			font-size: 14px;
+			color: #7E7E82;
+		}
+
+		&__link {
+			color: $button-color;
+		}
+
+		&__btn {
+			border-radius: 50px;
+			border: none;
+			padding: 7px 30px 7px 10px;
+			color: white;
+			background-color: $button-color;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: 'TT Lakes';
+			font-weight: 500;
+			position: relative;
+		}
+
+		&__btn::after{
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			right: 7px;
+			top: 2px;
+			background-image: url(../img/dropdown.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+}
+
+.button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.feedback-form {
+	&__textarea {
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+	font-weight: 500;
+	border-radius: 8px;
+	border: 1px solid #EAEAEA;
+	font-size: 1rem;
+	height:118px;
+}
+}

@@ -1,0 +1,15 @@
+button, a {
+  transition: all 500ms linear;
+}
+
+a:hover {
+  filter: opacity(0.6);
+}
+
+button:hover {
+  filter: opacity(0.5);
+}
+
+button {
+  cursor: pointer;
+}/*# sourceMappingURL=effects.css.map */

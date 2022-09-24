@@ -1,0 +1,180 @@
+.prices-swiper {
+  height: 270px;
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper {
+    height: 100%;
+    overflow: visible;
+  }
+}
+.prices-swiper__item:first-child {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__item:first-child {
+    background-color: #F8F8F8;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__item:last-child .prices-swiper__inner-card::after {
+    display: none;
+  }
+}
+.prices-swiper__item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__item {
+    width: 100% !important;
+  }
+}
+.prices-swiper__inner-card {
+  padding: 1.25em 1em;
+  font-size: 14px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__inner-card {
+    display: grid;
+    grid-template-columns: 50% 11% 12% 17%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    gap: 1em;
+    height: 54px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .prices-swiper__inner-card {
+    grid-template-columns: 45% 15% 15% 15%;
+  }
+}
+.prices-swiper__inner-card .inner-text:nth-child(3) > .inner-text__description {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__inner-card::after {
+    content: "";
+    display: block;
+    width: 97%;
+    top: 60px;
+    left: 12px;
+    position: absolute;
+    height: 1px;
+    background-color: rgb(234, 234, 234);
+    z-index: 999;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__inner-text span.prices-swiper__service-title {
+    display: none;
+  }
+}
+.prices-swiper__service-title {
+  display: block;
+  margin-bottom: 3px;
+  color: #7E7E82;
+}
+.prices-swiper__service-description {
+  display: block;
+}
+.prices-swiper__btn {
+  position: absolute;
+  right: 1.2em;
+  bottom: 1.2em;
+  border-radius: 50px;
+  border: none;
+  padding: 7px 30px 7px 10px;
+  color: white;
+  background-color: #FF3E79;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "TT Lakes";
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper__btn {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+.prices-swiper__btn::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 7px;
+  top: 2px;
+  background-image: url(../../img/dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .prices-swiper-header {
+    background-color: #F8F8F8;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices-swiper-header::after {
+    display: none;
+  }
+}
+
+.commercial-order {
+  padding-right: 2em;
+}
+.commercial-order__text {
+  font-size: 14px;
+  margin-top: 0;
+  line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .commercial-order__text {
+    margin-top: 1em;
+  }
+}
+.commercial-order__btn {
+  font-weight: 500;
+  font-size: 1rem;
+  width: 215px;
+  text-align: left;
+  line-height: 1.5rem;
+  position: relative;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .commercial-order__btn {
+    width: 320px;
+  }
+}
+.commercial-order__btn::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 85px;
+  bottom: -1px;
+  background-image: url(../../img/commercialBtn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .commercial-order__btn::after {
+    right: 0px;
+  }
+}/*# sourceMappingURL=prices-swiper.css.map */
